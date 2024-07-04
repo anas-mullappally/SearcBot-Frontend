@@ -1,113 +1,155 @@
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import Image from "next/image";
 
 export default function Home() {
+  const backgroundImageUrl =
+    "https://plus.unsplash.com/premium_photo-1682308449346-0d68b4e3f3fe?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className="flex justify-center items-center h-screen bg-black">
+      <div className="flex flex-col justify-center items-center w-[50vw]">
+        <Input
+          type="text"
+          placeholder="Search"
+          className="outline-none focus:outline-none"
         />
+
+        <div className="w-full mt-5">
+          <Card className="h-[20vh] overflow-auto px-10 py-5 text-justify">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores exercitationem veritatis explicabo? Inventore, nesciunt
+              itaque natus magnam veritatis saepe? Praesentium numquam neque
+              accusamus, ipsa soluta odit repellat nemo tenetur officia. Eius
+              iste rem fuga numquam sapiente voluptatum voluptates architecto,
+              voluptate quasi provident nostrum facere temporibus suscipit
+              dolore enim qui et vero eos corporis earum id. Iste adipisci
+              itaque nihil doloribus. Tempora, officia ex, iure autem debitis
+              rem ad culpa dolores similique ullam reiciendis iste aliquam optio
+              perspiciatis odit quaerat? Neque ipsa totam nesciunt atque earum
+              velit quibusdam, recusandae animi facilis? Ex repellat, tenetur ad
+              qui modi, voluptates consectetur ab eius fugit iusto rerum,
+              doloribus in natus placeat quam laboriosam repudiandae aspernatur
+              sint eligendi distinctio aperiam perspiciatis sit. Sapiente,
+              voluptate quam. Harum excepturi quaerat odit ad dolore et itaque
+              officiis, eius delectus nisi, ipsum ut exercitationem! Deserunt
+              libero ratione eius numquam saepe. Fugiat eos quo inventore
+              dolorum minus velit reiciendis voluptate? Dolore, quas porro? Nemo
+              expedita pariatur vero illo numquam, necessitatibus sunt.
+              Similique eos laborum dolore architecto accusantium quam, ducimus,
+              cum eum atque consequuntur ratione aut nihil numquam asperiores
+              velit illum! Amet accusamus a debitis possimus accusantium rerum
+              excepturi voluptatum molestias velit! Porro assumenda eos
+              voluptates. Nemo incidunt quis quo delectus vero cumque
+              repellendus accusantium, inventore facere officia tenetur ex
+              animi. Incidunt, ex. Quasi inventore atque eligendi deserunt
+              quisquam, odit ipsam laudantium aspernatur necessitatibus porro
+              tempora iste praesentium distinctio sapiente consequuntur amet
+              neque sit autem voluptatem incidunt! Expedita placeat eligendi
+              minima! Consequuntur officia impedit vero tempora placeat eaque
+              quo debitis iusto, nostrum ipsum, nulla qui ipsam aliquam
+              veritatis enim, nobis soluta? Quibusdam fuga iusto hic eligendi
+              illo quasi! Modi, perspiciatis porro? Itaque eius amet, nemo iusto
+              eveniet repudiandae voluptas, a voluptatibus officia hic voluptate
+              sint culpa. Totam, saepe fugiat. Quam facilis sit ab autem
+              voluptate quas labore vero magnam ut quis. A nostrum pariatur
+              exercitationem ea ab odit tempore, quisquam doloremque quos
+              aspernatur eveniet obcaecati laboriosam nam. Quam quae voluptatem
+              nesciunt. Atque voluptate dolore rerum debitis quidem libero
+              consequuntur molestias natus? Minus eveniet quasi alias eum
+              debitis inventore voluptate ducimus labore temporibus molestias
+              saepe corporis non harum unde perspiciatis, natus ipsa voluptatem,
+              sapiente architecto quos quidem error quam. Dolorem, cupiditate
+              mollitia. Unde dignissimos consequuntur minus necessitatibus enim
+              earum repudiandae rerum. Sed quae ea laboriosam fugit, corporis
+              libero illum fugiat, error perferendis qui nulla. Consectetur
+              voluptatibus quasi voluptatum odio rem, quidem consequatur!
+              Facilis quas nesciunt explicabo quae? Ipsa unde minima, at fuga,
+              blanditiis consectetur consequuntur sunt, et asperiores
+              consequatur vel necessitatibus perspiciatis facilis totam dolor
+              voluptas enim doloremque odio architecto est dicta? Quaerat
+              quibusdam quas facere obcaecati aliquid numquam, tempora ut
+              officiis beatae modi? A magnam facere cupiditate similique
+              asperiores nisi, aspernatur laborum provident? Ab, excepturi! Modi
+              tempore provident quae ratione accusantium! Tempore dolorum itaque
+              maiores sunt non, recusandae, veritatis deleniti provident aliquam
+              eius laudantium eligendi expedita saepe vitae repellendus
+              consequuntur debitis molestiae! Commodi obcaecati consectetur esse
+              asperiores quisquam, voluptates dolor veritatis! Id vero, vitae
+              harum inventore in tenetur consequatur esse eveniet necessitatibus
+              nam ducimus aliquam nobis voluptates quis error aspernatur
+              delectus fugit magni. Similique temporibus ut porro, inventore
+              quia quidem? Fuga? Accusantium eius veniam ipsum nulla velit
+              provident amet eaque laborum est, possimus praesentium ratione
+              numquam fuga ea blanditiis quasi, eos rem adipisci iure voluptas
+              aut. Voluptates adipisci asperiores necessitatibus quasi. Nihil
+              cumque iure enim magnam? Excepturi quasi voluptas sit obcaecati
+              quam cupiditate neque aspernatur, alias delectus nemo
+              necessitatibus mollitia perspiciatis tempore architecto
+              consectetur hic, repudiandae laboriosam nostrum maxime assumenda
+              optio. Magni minima corrupti veritatis molestias. Ab magni
+              distinctio ipsam expedita consequuntur quae autem veritatis natus
+              nulla unde, repellat quasi voluptate reprehenderit inventore
+              voluptatibus tenetur earum fugit corrupti. Repudiandae, recusandae
+              molestias.
+            </p>
+          </Card>
+        </div>
+
+        {/* ---------- specialty section start -----------------  */}
+        <div className="w-full mt-5">
+          <Card
+            className="h-[20vh] flex justify-center items-center"
+            style={{
+              backgroundImage: `url(${backgroundImageUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="bg-white p-4 bg-opacity-40 rounded text-6xl">
+              Cardiology
+            </div>
+          </Card>
+        </div>
+        {/* ---------- specialty section end -----------------  */}
+
+        {/* ---------- Doctors suggestion section start -----------------  */}
+        <div className="w-full mt-5 flex gap-2">
+          <Card className="w-1/2 h-[30vh] ">
+            <div className="h-3/5	 w-full  flex justify-center ">
+              <div className="mt-5 h-4/5	w-9/12 ">
+                <Image
+                  src="https://images.unsplash.com/photo-1550831106-0994fe8abcfe?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="dr-image"
+                  height={1000}
+                  width={500}
+                  className="h-full w-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="h-1/2 flex justify-center mt-3 text-xl">
+              Dr. Name
+            </div>
+          </Card>
+          <Card className="w-1/2 h-[30vh]">
+            <div className="h-3/5	 w-full  flex justify-center ">
+              <div className="mt-5 h-4/5	w-9/12 ">
+                <Image
+                  src="https://images.unsplash.com/photo-1550831106-0994fe8abcfe?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="dr-image"
+                  height={1000}
+                  width={500}
+                  className="h-full w-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="h-1/2 flex justify-center mt-3 text-xl">
+              Dr. Name
+            </div>
+          </Card>
+        </div>
+        {/* ---------- Doctors suggestion section end -----------------  */}
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
