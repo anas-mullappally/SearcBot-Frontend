@@ -106,7 +106,7 @@ export default function Home() {
               backgroundPosition: "center",
             }}
           >
-            <div className="bg-white p-4 bg-opacity-40 rounded text-6xl">
+            <div className="bg-white p-4 bg-opacity-40 rounded text-6xl cursor-default">
               Cardiology
             </div>
           </Card>
