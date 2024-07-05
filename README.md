@@ -13,7 +13,7 @@ Next.js, Shadcn, Tailwind,
 
 2. Install Dependencies:
     ```
-       cd demo-project
+       cd SearcBot-Frontend
        npm install
     ```
 
