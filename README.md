@@ -3,7 +3,7 @@
 demo project
 
 ## Tech Stack 
-Next.js, Shadcn, Tailwind, Zustand, 
+Next.js, Shadcn, Tailwind, 
 
 ## Usage
 1. Clone the repository 
