@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -18,7 +19,7 @@ export default function Home() {
     specialities: [],
     doctors: [],
   });
-  const [error, setError] = useState("");
+  const [error, setError] = useState(" ");
   const [openAiLoading, setOpenAiLoading] = useState(false);
   const [secondLoading, setSecondLoading] = useState(false);
 
@@ -87,19 +88,25 @@ export default function Home() {
 
   const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
     if (error) setError("");
-    if (result.reasons){
+    if (result.reasons) {
       setResult({ doctors: [], reasons: "", specialities: [] });
     }
     setPrompt(e.target.value);
   };
 
+  const clearResult = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    setError("");
+    setPrompt("");
+    setResult({ doctors: [], specialities: [], reasons: "" });
+  };
   const backgroundImageUrl =
     "https://plus.unsplash.com/premium_photo-1682308449346-0d68b4e3f3fe?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   return (
     <div className="flex justify-center items-center h-screen bg-black">
       <div className="flex flex-col justify-center items-center w-[50vw]">
-        <form onSubmit={handleSubmit} className="w-full">
+        <form onSubmit={handleSubmit} className="w-full flex gap-3">
           <Input
             type="text"
             placeholder="Search"
@@ -107,10 +114,20 @@ export default function Home() {
             value={prompt}
             onChange={handleChange}
           />
-          {error && <p className="text-red-500 mt-2">{error}</p>}
+          {result.reasons ? (
+            <Button variant={"outline"} onClick={clearResult}>
+              Clear
+            </Button>
+          ) : (
+          
+            <Button variant={"outline"} disabled={openAiLoading} type="submit" onClick={handleSubmit}>
+              Send
+            </Button>
+          )}
         </form>
+        {error && <div className="text-red-500 mt-2 w-full">{error}</div>}
 
-        <div className="w-full mt-5">
+        <div className="w-full mt-3">
           {openAiLoading ? (
             <>
               <Skeleton className="h-[10vh] w-full px-5 py-2" />
@@ -162,7 +179,7 @@ export default function Home() {
             </>
           ) : (
             <>
-              {result.doctors.length > 0 ? (
+              {result?.doctors?.length > 0 ? (
                 result.doctors.map((item: Doctor) => (
                   <Card className="w-1/2 h-[30vh] " key={item.id}>
                     <div className="h-3/5	 w-full  flex justify-center ">
